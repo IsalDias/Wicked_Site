@@ -1,0 +1,28 @@
+User-agent: *
+Allow: /
+Allow: /events
+Allow: /aboutus
+Allow: /services
+Allow: /contactus
+Allow: /products
+Disallow: /admin
+Disallow: /.next
+Disallow: /api
+
+Sitemap: https://www.wickedrevelations.com/sitemap.xml
+
+# Crawl delay (in seconds)
+Crawl-delay: 1
+
+# Request-rate
+Request-rate: 1/1s
+
+# Specific rules for Google Bot
+User-agent: Googlebot
+Allow: /
+Crawl-delay: 0
+
+# Specific rules for Bingbot
+User-agent: Bingbot
+Allow: /
+Crawl-delay: 1
