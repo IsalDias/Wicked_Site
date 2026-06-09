@@ -13,8 +13,8 @@ import {
 import KeyboardArrowLeft from "@mui/icons-material/KeyboardArrowLeft";
 import KeyboardArrowRight from "@mui/icons-material/KeyboardArrowRight";
 
-import latest1 from "../../public/images/wicked-01-01.jpg";
-import latest2 from "../../public/images/wicked-01-02.jpg";
+import latest1 from "../../public/images/wicked-01-01.png";
+import latest2 from "../../public/images/wicked-01-02.png";
 
 const slides = [
   {
@@ -110,8 +110,8 @@ function HeroSlide({ slide, active, max, next, back }) {
             <Button
               variant="contained"
               sx={{
-                bgcolor: "#fff",
-                color: "#000",
+                bgcolor: "red",
+                color: "white",
                 px: 4,
                 py: 1.5,
                 "&:hover": { bgcolor: "#ddd" },

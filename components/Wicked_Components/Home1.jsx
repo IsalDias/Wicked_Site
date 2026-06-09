@@ -142,7 +142,7 @@ const Home1 = () => {
       </div>
 
       {/* Dark overlay */}
-      <div className="absolute inset-0 bg-black/65" />
+      <div className="absolute inset-0 bg-black/5" />
 
       {/* Gradient overlay */}
       <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-black/25 to-black/80" />
@@ -169,8 +169,8 @@ const Home1 = () => {
             ref={titleRef}
             className="text-4xl font-extrabold leading-[0.95] tracking-tight sm:text-5xl md:text-7xl lg:text-8xl"
           >
-            Wicked
-            <span className="block text-white">Revelations</span>
+            WICKED
+            <span className="block text-white">REVELATIONS</span>
           </h1>
 
           <div className="mx-auto mt-6 h-[3px] w-24 rounded-full bg-red-600 shadow-[0_0_24px_rgba(220,38,38,0.8)]" />

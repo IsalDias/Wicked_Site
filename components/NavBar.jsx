@@ -10,6 +10,7 @@ const LINKS = [
   { href: "/", label: "Home" },
   { href: "/aboutus", label: "About Us" },
   { href: "/services", label: "Services" },
+  { href: "/events", label: "WICKED Events" },
   { href: "/contactus", label: "Contact Us" },
 ];
 
@@ -61,9 +62,9 @@ export default function NavBar() {
         <div className="mx-auto max-w-6xl px-3 sm:px-5 lg:px-20">
 
           {/* Dark Glass Container */}
-          <div className="rounded-xl border border-white/15 bg-black/60 backdrop-blur-xl shadow-[0_8px_30px_rgba(0,0,0,0.5)]">
+          <div className="rounded-xl bg-black/60 backdrop-blur-xl shadow-[0_8px_30px_rgba(0,0,0,0.5)]">
 
-            <div className="flex items-center justify-between px-2 py-1">
+            <div className="flex items-center justify-between px-4 py-3">
 
               {/* LOGO */}
               <Link href="/" className="flex items-center" prefetch>
@@ -71,7 +72,7 @@ export default function NavBar() {
                   src={ZdataLogo}
                   alt="Logo"
                   priority
-                  className="h-auto w-12 sm:w-22.5"
+                  className="h-auto w-18 sm:w-29"
                 />
               </Link>
 
