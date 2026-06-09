@@ -7,7 +7,7 @@ import EventDetails from './EventDetails';
 import latest1 from '../../public/images/wicked-01-03.png';
 import latest2 from '../../public/images/wicked-01-02.png';
 import latest3 from '../../public/images/wicked-01-02_culturemadness.png';
-import logo_culture from '../../public/images/WICKEDLOGO.png';
+import logo_culture from '../../public/images/logo_culture.png';
 
 const NEW_EVENTS = [
   {
@@ -26,27 +26,27 @@ const NEW_EVENTS = [
 const PAST_EVENTS = [
   {
     id: 1,
-    title: 'Tech Innovation Summit 2024',
+    title: 'Culture Madness',
     date: 'June 15, 2024',
     location: 'San Francisco, CA',
-    description: 'Join us for an exciting discussion on AI and fintech innovation.',
+    description: 'Highlights from Culture Madness featuring live performances, audience moments, stage productions, and unforgettable experiences from the event.',
     shortDescription: 'Annual tech innovation summit',
     images: [latest3],
     logo: logo_culture,
     attendees: '500+',
     category: 'Conference',
   },
-  {
-    id: 2,
-    title: 'Financial Services Workshop',
-    date: 'July 22, 2024',
-    location: 'New York, NY',
-    description: 'Hands-on workshop covering the latest banking technologies.',
-    shortDescription: 'Banking & fintech workshop',
-    images: [latest2, latest1],
-    attendees: '200+',
-    category: 'Workshop',
-  },
+//   {
+//     id: 2,
+//     title: 'Financial Services Workshop',
+//     date: 'July 22, 2024',
+//     location: 'New York, NY',
+//     description: 'Hands-on workshop covering the latest banking technologies.',
+//     shortDescription: 'Banking & fintech workshop',
+//     images: [latest2, latest1],
+//     attendees: '200+',
+//     category: 'Workshop',
+//   },
 ];
 
 export default function EventsClient() {
@@ -148,17 +148,17 @@ export default function EventsClient() {
                     className="object-cover group-hover:scale-105 transition-transform duration-300"
                   />
 
-                  <div className="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-transparent" />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black via-black/1 to-transparent" />
 
                   {event.logo && (
-                    <div className="absolute -bottom-8 left-6 z-20">
-                      <div className="rounded-2xl border border-white/10 bg-black/80 p-3 shadow-2xl backdrop-blur-md">
+                    <div className="absolute bottom-6 left-6 z-20">
+                      <div className="rounded-2xl border border-white/20 bg-black/70 p-1 shadow-2xl backdrop-blur-md">
                         <Image
                           src={event.logo}
                           alt={`${event.title} logo`}
-                          width={90}
-                          height={90}
-                          className="object-contain"
+                          width={100}
+                          height={100}
+                          className="h-24 w-24 object-contain"
                         />
                       </div>
                     </div>
@@ -166,17 +166,17 @@ export default function EventsClient() {
                 </div>
 
                 <div className="p-8 pt-12">
-                  <span className="mb-4 text-xs font-bold uppercase tracking-[0.35em] text-white/40 inline-block">
+                  {/* <span className="mb-4 text-xs font-bold uppercase tracking-[0.35em] text-white/40 inline-block">
                     {event.category}
-                  </span>
+                  </span> */}
 
                   <h3 className="text-2xl md:text-3xl font-black uppercase leading-tight mb-4">
                     {event.title}
                   </h3>
 
-                  <p className="text-sm leading-relaxed text-white/55">
+                  {/* <p className="text-sm leading-relaxed text-white/55">
                     {event.shortDescription}
-                  </p>
+                  </p> */}
                 </div>
               </div>
             ))}
